@@ -1,8 +1,8 @@
 import './style.scss';
-import moonImg from '../../assets/moon.png';
-import sunImg from '../../assets/sun.png';
-import moonImgBtn from '../../assets/moon-btn.png';
-import sunImgBtn from '../../assets/sun-btn.png';
+import moonImg from '../../../public/assets/moon.png';
+import sunImg from '../../../public/assets/sun.png';
+import moonImgBtn from '../../../public/assets/moon-btn.png';
+import sunImgBtn from '../../../public/assets/sun-btn.png';
 import { useState } from 'react';
 
 export function Home() {
@@ -17,14 +17,14 @@ export function Home() {
 
       <div 
         className="main"
-        style={{backgroundImage: `url(/src/assets/background-${night ? 1 : 2}.png)`}}
+        style={{backgroundImage: `url(../../../public/assets/background-${night ? 1 : 2}.png)`}}
       >
         <button 
           className='changeTime'
           onClick={() => setNight(!night)}
         >
           <img src={night ? sunImgBtn : moonImgBtn}/>
-          {night ?   'Amanhecer' : 'Anoitecer'}
+          {night ? 'Amanhecer' : 'Anoitecer'}
         </button>
       </div>
     </div>
