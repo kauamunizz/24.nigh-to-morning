@@ -17,7 +17,7 @@ export function Home() {
 
       <div 
         className="main"
-        style={{backgroundImage: `url(../../../public/assets/background-${night ? 1 : 2}.png)`}}
+        style={{backgroundImage: `url(../../../assets/background-${night ? 1 : 2}.png)`}}
       >
         <button 
           className='changeTime'
